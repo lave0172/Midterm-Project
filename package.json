@@ -1,7 +1,14 @@
 {
-  "name": "",
-  "version": "",
+  "name": "lave0172",
   "dependencies": {
     "webpack": "^3.8.1"
-  }
+  },
+  "description": "Midterm Project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

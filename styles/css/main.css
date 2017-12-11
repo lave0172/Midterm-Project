@@ -1,0 +1,115 @@
+body {
+  margin: 0 auto;
+  font-family: Helvetica;
+  background-color: #EEEEEE; }
+
+header {
+  background: red;
+  border: 5px solid black; }
+  header h1 {
+    color: white;
+    padding: 25px 0;
+    font-size: 36px;
+    text-shadow: 2px 2px #000000;
+    text-align: center; }
+
+main p {
+  text-align: center; }
+
+.image-container {
+  margin: 10px 10px; }
+  .image-container .image {
+    border: 5px solid black;
+    padding: 5px;
+    height: 350px; }
+    .image-container .image img {
+      width: 100%;
+      max-width: 400px;
+      height: 100%;
+      display: block;
+      margin: 0 auto; }
+
+#social-links, #social-links-footer {
+  text-align: right;
+  padding: 0; }
+  #social-links li, #social-links-footer li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    background: red;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 2px; }
+
+#social-links-footer {
+  text-align: center; }
+
+nav ul {
+  padding: 0; }
+
+nav ul li {
+  text-align: center;
+  padding: 5px;
+  background-color: #444444;
+  height: 40px; }
+  nav ul li:hover {
+    font-size: 24px;
+    text-decoration: none; }
+
+nav ul li a.active {
+  color: deepskyblue;
+  font-weight: bold; }
+
+footer {
+  text-align: center;
+  background-color: #444444;
+  padding: 10px 0;
+  color: white;
+  font-size: 14px;
+  clear: both;
+  padding: 25px; }
+  footer p a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 25px; }
+
+.back-to-top {
+  padding: 10px; }
+
+main h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: charcoal;
+  text-align: center; }
+
+#contact-form input, #contact-form textarea {
+  height: 45px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #585958;
+  font-size: 16px; }
+
+#contact-form input {
+  margin-bottom: 12px; }
+
+#contact-form button {
+  background-color: red;
+  border-radius: 20px;
+  margin: 10px auto;
+  width: 100px;
+  padding: 5px;
+  border: 2px solid #585958;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  cursor: pointer; }
+
+#map {
+  width: 100%;
+  display: block;
+  margin: 0 auto; }
