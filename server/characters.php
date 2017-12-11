@@ -1,3 +1,43 @@
+
+
+
+                <?php
+                    require_once('server/characters.php');
+
+                    foreach ($characters as $character) {
+                      if ($character['filter'] === "old") {
+                          echo "<div class='image col-xs-12 col-sm-6 col-md-4 col-lg-3'>";
+                          echo "<img src='" . $character['image'] . "' />";
+                          echo $character['name'];
+                          echo "</div>";
+                      }
+
+                    }
+                ?>
+            </div>
+        </div>
+
+        <h2>Vote for a New Challenger</h2>
+
+        <!-- Comment -->
+
+        <div class="image-container">
+            <div class="row">
+                <?php
+                    foreach ($characters as $character) {
+                      if ($character['filter'] === "new") {
+                          echo "<div class='image col-xs-12 col-sm-6 col-md-4 col-lg-3'>";
+                          echo $character['name'];
+                          echo "</div>";
+                        }
+                    }
+                ?>
+            </div>
+        </div>
+
+
+
+
 <?php
   $characters = [
     [

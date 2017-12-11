@@ -61,7 +61,7 @@ nav ul li {
     text-decoration: none; }
 
 nav ul li a.active {
-  color: deepskyblue;
+  color: dred;
   font-weight: bold; }
 
 footer {
@@ -76,15 +76,28 @@ footer {
     color: #FFFFFF;
     text-decoration: none;
     padding: 25px; }
-
-.back-to-top {
-  padding: 10px; }
-
-main h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: charcoal;
-  text-align: center; }
+    footer p a:hover {
+      colour: red;
+      font-size: 24px;
+      text-decoration: none; }
+  footer .back-to-top {
+    padding: 10px; }
+  footer main h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: charcoal;
+    text-align: center; }
+  footer button {
+    background-color: red;
+    border-radius: 20px;
+    margin: 10px auto;
+    width: 100px;
+    padding: 5px;
+    border: 2px solid #585958;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer; }
 
 #contact-form input, #contact-form textarea {
   height: 45px;
