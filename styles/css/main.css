@@ -5,7 +5,7 @@ body {
 
 header {
   background: red;
-  border: 5px solid black; }
+  border: 10px solid #899bbc; }
   header h1 {
     color: white;
     padding: 25px 0;
@@ -19,9 +19,28 @@ main p {
 .image-container {
   margin: 10px 10px; }
   .image-container .image {
-    border: 5px solid black;
-    padding: 5px;
-    height: 350px; }
+    margin-bottom: 10px; }
+    .image-container .image.active .inner-container {
+      border-color: #f00; }
+      .image-container .image.active .inner-container:hover {
+        border-color: #f00; }
+    .image-container .image .inner-container {
+      border: 10px solid black;
+      padding: 5px;
+      height: 350px;
+      position: relative; }
+      .image-container .image .inner-container:hover {
+        border: 10px solid #899bbc; }
+      .image-container .image .inner-container .character-name {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: #444444;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: white;
+        font-weight: bold; }
     .image-container .image img {
       width: 100%;
       max-width: 400px;
@@ -39,65 +58,77 @@ main p {
     width: 45px;
     height: 45px;
     font-size: 16px;
-    background: red;
     padding: 10px;
+    background: red;
     border: 2px solid black;
     border-radius: 50%;
     margin: 2px; }
-
-#social-links-footer {
-  text-align: center; }
+    #social-links li a, #social-links-footer li a {
+      color: white; }
+      #social-links li a:hover, #social-links-footer li a:hover {
+        color: #444444;
+        text-decoration: none; }
 
 nav ul {
   padding: 0; }
-
-nav ul li {
-  text-align: center;
-  padding: 5px;
-  background-color: #444444;
-  height: 40px; }
-  nav ul li:hover {
-    font-size: 24px;
+  nav ul li {
+    text-align: center;
+    padding: 10px;
+    background-color: #444444;
     text-decoration: none; }
+    nav ul li:hover {
+      color: #3399ff;
+      text-decoration: none; }
+    nav ul li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none; }
+      nav ul li a:hover {
+        color: #3399ff;
+        text-decoration: none; }
 
-nav ul li a.active {
-  color: dred;
-  font-weight: bold; }
+main hr {
+  border-color: black; }
+
+main h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444444;
+  text-align: center; }
+
+.btn-style-one {
+  background-color: red;
+  border-radius: 20px;
+  margin: 10px auto;
+  width: 100px;
+  padding: 5px;
+  border: 2px solid #585958;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  cursor: pointer; }
 
 footer {
   text-align: center;
   background-color: #444444;
-  padding: 10px 0;
+  padding: 10px 0px;
   color: white;
   font-size: 14px;
   clear: both;
-  padding: 25px; }
+  padding: 25px;
+  border: 10px solid #899bbc; }
   footer p a {
     color: #FFFFFF;
     text-decoration: none;
     padding: 25px; }
     footer p a:hover {
-      colour: red;
-      font-size: 24px;
+      color: #3399ff;
       text-decoration: none; }
   footer .back-to-top {
     padding: 10px; }
-  footer main h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: charcoal;
-    text-align: center; }
-  footer button {
-    background-color: red;
-    border-radius: 20px;
-    margin: 10px auto;
-    width: 100px;
-    padding: 5px;
-    border: 2px solid #585958;
-    font-size: 16px;
-    font-weight: bold;
-    display: block;
-    cursor: pointer; }
+
+#social-links-footer {
+  text-align: center; }
 
 #contact-form input, #contact-form textarea {
   height: 45px;
@@ -126,3 +157,13 @@ footer {
   width: 100%;
   display: block;
   margin: 0 auto; }
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    margin: 0;
+    clear: both;
+    height: 40px; }
+    nav ul li {
+      float: left;
+      width: 20%;
+      list-style: none; } }
